@@ -8,11 +8,11 @@ type Props = {
 
 function Categories({ categories, selected, onClick }: Props) {
   return (
-    <section>
-      <h2>Category</h2>
+    <section className='text-center p-4 mr-7 '>
+      <h2 className='text-lg font-bold border-b border-sky-500'>Category</h2>
       <ul>
         {categories.map((category) => (
-          <li key={category} onClick={() => onClick(category)}>
+          <li className={`cursor-pointer hover:text-sky-500 ${category===selected&&'text-sky-400'}`} key={category} onClick={() => onClick(category)}>
             {category}
           </li>
         ))}

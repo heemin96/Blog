@@ -21,13 +21,14 @@ function FilterablePosts({ posts, categories }: Props) {
       : posts.filter((post) => post.category === selected);
 
   return (
-    <section>
-      <PostsGrid posts={filtered} />
+    <section className='flex m-4'>
       <Categories
         categories={[ALL_POSTS, ...categories]}
         selected={selected}
         onClick={setSelected}
       />
+      <PostsGrid posts={filtered} />
+  
     </section>
   );
 }
