@@ -1,7 +1,26 @@
+import ContactForm from "@/components/ContactForm";
 import React from "react";
+import { AiFillGithub } from "react-icons/ai";
 
 function page() {
-  return <p>연락하기</p>;
+  return (
+    <section className="flex flex-col items-center">
+      <h2 className="text-3xl font-bold my-2">Contact me</h2>
+      <p>khk8300@naver.com</p>
+
+      <a
+        className="text-5xl hover:text-yellow-600 mt-3"
+        href="https://github.com/heemin96"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <AiFillGithub />
+      </a>
+
+      <h2 className="text-3xl font-bold my-8">Or Send Me An Email</h2>
+      <ContactForm />
+    </section>
+  );
 }
 
 export default page;
