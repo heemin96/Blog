@@ -2,6 +2,11 @@ import ContactForm from "@/components/ContactForm";
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 
+export const metadata = {
+  title: "Contact Me",
+  description: "김희민에게 메일 보내기",
+};
+
 function page() {
   return (
     <section className="flex flex-col items-center">

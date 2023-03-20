@@ -1,8 +1,14 @@
 import Hero from "@/components/Hero";
 import React from "react";
 
+export const metadata = {
+  title: "About Me",
+  description: "김희민 커리어 소개",
+};
+
 function page() {
   const TITLE_CLASS = "text-2xl font-bold text-gray-800";
+
   return (
     <>
       <Hero />
