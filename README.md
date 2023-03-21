@@ -51,7 +51,7 @@
 
 ### 기능 1
 
-- tailwind(flex, Grid)를 사용한 반응형 웹페이지
+- tailwind를 사용한 반응형 웹페이지
 - 반응형 multi carousel   
 - 카테고리 필터 기능
 
